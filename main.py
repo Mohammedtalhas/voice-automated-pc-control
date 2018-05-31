@@ -4,7 +4,7 @@ import subprocess as s
 import icon  
 from win10toast import ToastNotifier
 from Adafruit_IO import Client, Data
-aio = Client('2463b53e4a774cd9a3195257819e5826')
+aio = Client('')
 
 import re, urllib, sys
 toaster = ToastNotifier()
@@ -99,7 +99,7 @@ def single_download(song=None):
 
 while(1):
 
-    rec = aio.receive('Control')
+    rec = aio.receive('')
     data=rec.value
 
 
